@@ -5,6 +5,6 @@ import {Heading} from '@sanity/ui'
 // Sanity's interface library. You can find its documentation under:
 // https://www.sanity.io/ui
 
-const petsProjectLogo = () => <Heading size={1}>🐶🐱 Pets*Project</Heading>
+const petsProjectLogo = () => <Heading size={1}>Medusa Events</Heading>
 
 export default petsProjectLogo
