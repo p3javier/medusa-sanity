@@ -1,0 +1,47 @@
+{
+  "root": true,
+  "project": {
+    "name": "medusa"
+  },
+  "api": {
+    "projectId": "o7iw3v1c",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "asset-source-unsplash",
+    "media"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./deskStructure.js"
+    },
+    {
+      "implements": "part:@sanity/base/root",
+      "path": "plugins/sanity-plugin-tutorial/CustomDefaultLayout"
+    },
+    {
+      "implements": "part:@sanity/base/brand-logo",
+      "path": "./components/logo/petsProjectLogo.jsx"
+    },
+    {
+      "implements": "part:@sanity/base/theme/variables/override-style",
+      "path": "./style.css"
+    }
+  ]
+}
