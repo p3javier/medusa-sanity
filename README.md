@@ -1,6 +1,6 @@
-# Sanity 🐶🐱 Pets\*Project
+# Sanity Medusa Events Project
 
-Congratulations, you have now installed the template 🐶🐱 Pets\*Project studio, an open source real-time content editing environment connected to the Sanity backend.
+This project was made with the intention of being the backend of Medusa Events company's website [https://medusa.events/].
 
 Here are some features that we already have set up so you can explore at your own pace:
 
@@ -41,3 +41,19 @@ If you want to explore more:
 - [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
 - [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
 - [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme
+
+## Available Scripts
+
+When you are done with the project installation in your computer you can run the followinf NPM scripts:
+
+- ### `npm start`
+
+  - Executes a local instance of the Sanity server in dev mode.
+
+- ### `npm run build`
+
+  - Generates a production build ready to be deployed.
+
+- ### `sanity deploy`
+  
+  - Generates a production build and automatically deploys it to [medusa-events.sanity.studio](https://medusa-events.sanity.studio/desk)
