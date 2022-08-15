@@ -2,13 +2,13 @@ import {EyeOpenIcon, DocumentIcon} from '@sanity/icons'
 import {ProductPreview} from '../components/views/ProductPreview'
 import S from '@sanity/desk-tool/structure-builder'
 import {JsonView} from '../components/views/JsonView'
-import productIcon from '../components/icons/productIcon'
+import serviceIcon from '../components/icons/serviceIcon'
 
 export default {
-  name: 'product',
+  name: 'service',
   type: 'document',
-  title: 'Product',
-  icon: productIcon,
+  title: 'Servicio',
+  icon: serviceIcon,
   views: [
     S.view.component(ProductPreview).title('Preview').icon(EyeOpenIcon),
     S.view.component(JsonView).title('JSON').icon(DocumentIcon),
@@ -41,7 +41,7 @@ export default {
     {
       name: 'name',
       type: 'string',
-      title: 'Name',
+      title: 'Nombre del servicio',
     },
     {
       name: 'tagline',
@@ -49,9 +49,9 @@ export default {
       title: 'Tagline',
     },
     {
-      name: 'material',
+      name: 'type',
       type: 'string',
-      title: 'Material',
+      title: 'Tipo De Servicio',
     },
     {
       name: 'description',
@@ -77,7 +77,7 @@ export default {
             {
               name: 'price',
               type: 'number',
-              title: 'Price (USD)',
+              title: 'Precio (EUR)',
             },
             {
               name: 'size',

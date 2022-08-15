@@ -8,7 +8,7 @@ export function PreviewWrapper({children}) {
     <Background paddingX={3} paddingY={5} justify="center">
       <Canvas radius={6}>
         <Flex as="header" direction="row" align="center" padding={4} justify="space-between">
-          <Title size={1}>Pets*Project</Title>
+          <Title size={1}>Medusa Events</Title>
           <nav>
             <Inline space={3}>
               <Text>Blog</Text>
