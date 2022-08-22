@@ -20,6 +20,15 @@ export default {
       title: 'Título',
     },
     {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+        maxLength: 96
+      }
+    },
+    {
       name: 'author',
       type: 'reference',
       title: 'Autor',
